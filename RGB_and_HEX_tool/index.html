@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div id="part1">
+    <div class="flex-container_pt1">
+      <div id="left_part" class="part">
+        <h2>RGB</h2>
+        <div class="line" id="r_line">
+          R:<input type="number" oninput="if(value>255)value=255;if(value<0)value=0" id="r_input" class="input">
+          <div class="tiny_block" id="block1"></div>
+        </div>
+        <div class="line" id="g_line">
+          G:<input type="number" oninput="if(value>255)value=255;if(value<0)value=0" id="g_input" class="input">
+          <div class="tiny_block" id="block2"></div>
+        </div>
+        <div class="line" id="b_line">
+          B:<input type="number" oninput="if(value>255)value=255;if(value<0)value=0" id="b_input" class="input">
+          <div class="tiny_block" id="block3"></div>
+        </div>
+        <button type="button" class="btn btn-primary" id="btn">Convert</button>
+        <div id="right_part" class="part"></div>
+      </div>
+  
+      <div id="right_part" class="part">
+        <h2>HEX</h2>
+        <div id="showscreen"></div>
+        <div id="block4" class="huge_block"></div>
+      </div>
+  
+    </div>
+  </div>
+  
+  <div id="part2">
+    <div class="line">
+      <div class="block_left" id="blockR_left">R</div>
+      <input type="range" min="0" max="255" id="slider_r">
+      <div class="block_right" id="blockR_right">blockR</div>
+    </div>
+    <div class="line">
+      <div class="block_left" id="blockG_left">G</div>
+      <input type="range" min="0" max="255" id="slider_g">
+      <div class="block_right" id="blockG_right">blockG</div>
+    </div>
+    <div class="line">
+      <div class="block_left" id="blockB_left">B</div>
+      <input type="range" min="0" max="255" id="slider_b">
+      <div class="block_right" id="blockB_right">blockB</div>
+    </div>
+    <div id="showscreen_pt2"></div>
+  </div>
+ <script src="javascript.js"></script> 
+ <script src ="style.css"></script>
+</body>
+</html>
